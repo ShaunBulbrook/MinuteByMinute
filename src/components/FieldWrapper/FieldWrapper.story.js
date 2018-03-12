@@ -1,5 +1,6 @@
+/* global module */
 import React from 'react';
-import {storiesOf, action, withInfo} from '../../stories';
+import {storiesOf, withInfo} from '../../stories';
 import {muiTheme} from 'storybook-addon-material-ui';
 
 import FieldWrapper from './FieldWrapper';
@@ -12,4 +13,4 @@ storiesOf('FieldWrapper', module)
 		<FieldWrapper>
 			<TextInput labelText="Example Field" />
 		</FieldWrapper>
-	))
+	));

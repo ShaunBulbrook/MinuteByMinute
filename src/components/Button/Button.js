@@ -17,6 +17,6 @@ Basic button
 Button.propTypes = {
 	children: PropTypes.string.isRequired,
 	onClick: PropTypes.func.isRequired,
-}
+};
 
-export default Button
+export default Button;

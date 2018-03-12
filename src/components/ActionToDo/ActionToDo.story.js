@@ -1,5 +1,6 @@
+/* global module */
 import React from 'react';
-import {storiesOf, action, withInfo} from '../../stories';
+import {storiesOf, withInfo} from '../../stories';
 import {muiTheme} from 'storybook-addon-material-ui';
 
 import ActionToDo from './ActionToDo';

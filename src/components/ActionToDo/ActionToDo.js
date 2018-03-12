@@ -14,7 +14,7 @@ const ActionToDo = ({children, labels}) => {
 			LABELS
 			<ul>{labelItems}</ul>
 		</div>
-	)
+	);
 };
 
 ActionToDo.description = `

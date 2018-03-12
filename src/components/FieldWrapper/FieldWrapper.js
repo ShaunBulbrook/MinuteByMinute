@@ -5,7 +5,7 @@ const FieldWrapper = ({children}) => (
 	<div className="FieldWrapper">
 		{children}
 	</div>
-)
+);
 
 FieldWrapper.description = `
 Presentational element that functions in a similar manner to a traditional fieldset. \n
@@ -14,6 +14,6 @@ Can be used on multiple fields.
 
 FieldWrapper.propTypes = {
 	children: PropTypes.object.isRequired,
-}
+};
 
 export default FieldWrapper;
