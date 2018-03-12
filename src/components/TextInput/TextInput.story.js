@@ -4,7 +4,8 @@ import {muiTheme} from 'storybook-addon-material-ui';
 
 import TextInput from './TextInput';
 
-storiesOf('TextInput', (story, context) => withInfo(TextInput.description)(story)(context))
+storiesOf('TextInput', module)
+	.addDecorator((story, context) => withInfo(TextInput.description)(story)(context))
 	.addDecorator(muiTheme())
 	.add('basic', () => (
 		<TextInput labelText="Example Label" onChange={action('onChange')} />

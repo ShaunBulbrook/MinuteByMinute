@@ -13,7 +13,7 @@ Can be used on multiple fields.
 `;
 
 FieldWrapper.propTypes = {
-	children: PropTypes.string.isRequired,
+	children: PropTypes.object.isRequired,
 }
 
 export default FieldWrapper;
