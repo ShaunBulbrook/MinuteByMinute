@@ -1,9 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import MaterialPaper from 'material-ui/Paper';
+
 const FieldWrapper = ({children}) => (
 	<div className="FieldWrapper">
-		{children}
+		<MaterialPaper
+			elevation={4}
+		>
+			{children}
+		</MaterialPaper>
 	</div>
 );
 

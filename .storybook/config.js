@@ -1,5 +1,4 @@
 import { configure } from '@storybook/react';
-import 'storybook-addon-material-ui';
 
 const req = require.context('../src/components', true, /\.story\.js$/)
 

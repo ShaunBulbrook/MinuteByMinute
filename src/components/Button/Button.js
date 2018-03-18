@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import MaterialButton from 'material-ui/Button';
+
 const Button = ({children, onClick}) => (
-	<button
-		type="button"
+	<MaterialButton
+		variant="raised"
 		onClick={onClick}
 	>
 		{children}
-	</button>
+	</MaterialButton>
 );
 
 Button.description = `
