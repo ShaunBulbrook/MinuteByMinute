@@ -6,10 +6,12 @@ import MaterialButton from 'material-ui/Button';
 import Divider from 'material-ui/Divider';
 import CountDownButton from 'react-countdown-button';
 
+import './AgendaItems.css';
+
 const AgendaItems = ({items}) => {
 	let agendaItems = items.map((agendaItem) => (
-		<MaterialPaper
-			elevation={5}
+		<MaterialPaper className="AgendaItem"
+			elevation={3}
 		>
 			<h3>{agendaItem.title}</h3>
 			{agendaItem.notes}

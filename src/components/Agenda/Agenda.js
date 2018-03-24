@@ -6,26 +6,26 @@ import AgendaItems from '../AgendaItems/AgendaItems.js';
 
 import MaterialPaper from 'material-ui/Paper';
 
+import './Agenda.css';
+
 const Agenda = ({heading, timeStart, timeFinish, agendaItems}) => (
-	<div className="Agenda">
-		<MaterialPaper
-			elevation={4}
-		>
-			<AgendaHeading
-				heading={heading}
-				timeStart={timeStart}
-				timeFinish={timeFinish}
-			/>
-			<AgendaItems items={agendaItems} />
-			//heading
-			//agendaItems
-			//-- agendaconent
-			//-- agendatimee
+	<MaterialPaper className="Agenda"
+		elevation={2}
+	>
+		<AgendaHeading
+			heading={heading}
+			timeStart={timeStart}
+			timeFinish={timeFinish}
+		/>
+		<AgendaItems items={agendaItems} />
+		//heading
+		//agendaItems
+		//-- agendaconent
+		//-- agendatimee
 
-			//agendaControls
+		//agendaControls
 
-		</MaterialPaper>
-	</div>
+	</MaterialPaper>
 );
 
 Agenda.description = `
