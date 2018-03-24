@@ -20,4 +20,4 @@ jobs:
 
       # Run the tests configured in package.json.
       - run:
-          command: npm run eslint"
+          command: "npm run eslint"

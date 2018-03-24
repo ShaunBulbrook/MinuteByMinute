@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import MaterialPaper from 'material-ui/Paper';
-import MaterialButton from 'material-ui/Button';
 import Divider from 'material-ui/Divider';
 import CountDownButton from 'react-countdown-button';
 
@@ -12,6 +11,7 @@ const AgendaItems = ({items}) => {
 	let agendaItems = items.map((agendaItem) => (
 		<MaterialPaper className="AgendaItem"
 			elevation={3}
+			key={agendaItem.id}
 		>
 			<h3>{agendaItem.title}</h3>
 			{agendaItem.notes}
@@ -27,7 +27,7 @@ const AgendaItems = ({items}) => {
 		<div className="AgendaItems">
 			{agendaItems}
 		</div>
-	)
+	);
 };
 
 
@@ -36,7 +36,7 @@ AgendaItems display component
 `;
 
 AgendaItems.propTypes = {
-	children: PropTypes.string.isRequired,
-}
+	items: PropTypes.array,
+};
 
 export default AgendaItems;

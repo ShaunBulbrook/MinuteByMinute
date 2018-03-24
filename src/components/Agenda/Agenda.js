@@ -18,13 +18,6 @@ const Agenda = ({heading, timeStart, timeFinish, agendaItems}) => (
 			timeFinish={timeFinish}
 		/>
 		<AgendaItems items={agendaItems} />
-		//heading
-		//agendaItems
-		//-- agendaconent
-		//-- agendatimee
-
-		//agendaControls
-
 	</MaterialPaper>
 );
 
@@ -33,6 +26,10 @@ Agenda display component
 `;
 
 Agenda.propTypes = {
-}
+	heading: PropTypes.string.isRequired,
+	timeStart: PropTypes.number,
+	timeFinish: PropTypes.number,
+	agendaItems: PropTypes.array,
+};
 
 export default Agenda;

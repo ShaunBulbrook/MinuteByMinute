@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import MaterialButton from 'material-ui/Button';
-
-const AgendaHeading = ({heading, timeStart, timeFinish, startMeeting}) => (
+const AgendaHeading = ({heading, timeStart, timeFinish}) => (
 	<div className="AgendaHeading">
 		<h1>{heading}</h1>
 		Time: {timeStart}
@@ -16,7 +14,9 @@ AgendaHeading display component
 `;
 
 AgendaHeading.propTypes = {
-	children: PropTypes.string.isRequired,
-}
+	heading: PropTypes.string.isRequired,
+	timeStart: PropTypes.number,
+	timeFinish: PropTypes.number,
+};
 
 export default AgendaHeading;

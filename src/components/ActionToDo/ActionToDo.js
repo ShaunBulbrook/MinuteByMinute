@@ -32,7 +32,7 @@ A basic Action
 ActionToDo.propTypes = {
 	children: PropTypes.string.isRequired,
 	labels: PropTypes.array,
-	onLabelDelete: PropTypes.func.required,
+	onLabelDelete: PropTypes.func.isRequired,
 };
 
 export default ActionToDo;
