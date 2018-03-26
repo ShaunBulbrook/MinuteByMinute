@@ -3,6 +3,7 @@ import logo from './logo.svg';
 
 import Button from './components/Button/Button';
 import TextInput from './components/TextInput/TextInput';
+import ConnectedAgendaList from './containers/ConnectedAgendaList/ConnectedAgendaList';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ class App extends Component {
 				</header>
 				<TextInput labelText="New Meeting" onChange={this.recordOnChange} />
 				<Button onClick={this.recordClick}>BEGIN</Button>
+				<ConnectedAgendaList />
 			</div>
 		);
 	}
